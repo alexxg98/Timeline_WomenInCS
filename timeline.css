@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+#cmd {
+  border-radius: 5px;
+  width:750px;
+  margin: 0 auto;
+  padding-top:15px;
+  background: lightgrey;
+  height: 700px;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-size:1em;
+  color: #fafafa;
+}
+
+#cmd_text {
+  border-radius: 0 0 5px 5px;
+  width:670px;
+  padding: 40px;
+  height: 620px;
+  overflow-y: scroll;
+  margin:0 auto;
+  background: #333;
+  letter-spacing: 0.15em;
+  line-height: 1.5em;
+}
+
+#content {
+  border-right: 2px solid;
+  animation: blink 0.5s step-end infinite alternate;
+}
+
+/* .cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background-color: #fafafa;
+  animation: blink 0.6s linear infinite alternate;
+} */
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
