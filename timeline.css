@@ -2,8 +2,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
+  margin: 10px 0;
 }
 #cmd {
   border-radius: 5px;
@@ -11,7 +12,7 @@ h1 {
   margin: 0 auto;
   padding-top: 5px;
   background: lightgrey;
-  height: 700px;
+  /* height: 70vh; */
   text-align: left;
   font-size:1em;
   color: #fafafa;
@@ -26,9 +27,9 @@ h1 {
   font-family: 'Inconsolata', monospace;
   border-radius: 0 0 5px 5px;
   width:670px;
-  padding: 40px;
-  height: 620px;
-  overflow-y: scroll;
+  padding: 15px 40px;
+  height: 75vh;
+  overflow-y: auto;
   margin:0 auto;
   background: #333;
   letter-spacing: 0.15em;
@@ -52,3 +53,54 @@ h1 {
       border-color: transparent
     }
   }
+
+
+#visualBtn {
+  float: right;
+  margin: 0 25px 0;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 97vw; /* Could be more or less, depending on screen size */
+  height: 94vh;
+}
+
+.modal-content img {
+  margin: auto;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

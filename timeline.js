@@ -19,7 +19,7 @@ const women = [
   "2014 | Coraline Ada Ehmike",
   "Drafts the first code of conduct for open source projects, the Contributor Covenant."
 ];
-var speed = 20;
+var speed = 50;
 
 function typeWriter(txt) {
   //console.log("txt = ", txt, "i = ", i);
@@ -40,6 +40,11 @@ function typeWriter(txt) {
   }
 }
 
+function scrollBottom() {
+  var elmnt = document.getElementById("content");
+  elmnt.scrollIntoView(false);
+}
+
 function displayType() {
   if (clicks <= women.length - 1) {
     if (i != 0) {
@@ -47,10 +52,38 @@ function displayType() {
     }
     if (clicks%2==0) {
       document.getElementById("content").innerHTML += "<br/><br/>&gt;&nbsp;";
-      setTimeout(displayType, 1000);
+      setTimeout(displayType, 2000);
     }
     // console.log(clicks);
     typeWriter(women[clicks]);
+    scrollBottom();
     clicks++;
+  }
+}
+
+
+// Get the modal
+var modal = document.getElementById("visualTimeline");
+
+// Get the button that opens the modal
+var btn = document.getElementById("visualBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
