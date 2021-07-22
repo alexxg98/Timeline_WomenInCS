@@ -2,21 +2,21 @@ var i = 0;
 var clicks = 0;
 var text = "Ada Lovelace";
 const women = [
-  "Ada Lovelace",
+  "1842-3 | Ada Lovelace",
   "Known as the first computer programmer. Lovelace was the first to publish an algorithm intended to be carried out by a machine.",
-  "Grace Hopper",
+  "1952 | Grace Hopper",
   "Developed the first compiler, A-o.",
-  "Mary Allen Wilkes",
+  "1965 | Mary Allen Wilkes",
   "First developer of an operating system, LAP. Wilkes was the first person to use a computer in their personal home.",
-  "Sister May Kenneth Keller",
+  "1965 | Sister May Kenneth Keller",
   "First American women to earn a Ph.D in computer science.",
-  "Melanie Rieback",
+  "2006 | Melanie Rieback",
   "Programmed the first virus to infect RFID devices.",
-  "Janet Emerson Bashen",
+  "2006 | Janet Emerson Bashen",
   "First African American women to hold a patent for a software invention.",
-  "Luxia Zhang",
+  "2009 | Luxia Zhang",
   "Awarded the IEEE Internet Award for her contributions toward developing the internet's architecture.",
-  "Coraline Ada Ehmike",
+  "2014 | Coraline Ada Ehmike",
   "Drafts the first code of conduct for open source projects, the Contributor Covenant."
 ];
 var speed = 20;
@@ -47,12 +47,10 @@ function displayType() {
     }
     if (clicks%2==0) {
       document.getElementById("content").innerHTML += "<br/><br/>&gt;&nbsp;";
-      setTimeout(displayType, 500);
+      setTimeout(displayType, 1000);
     }
     // console.log(clicks);
     typeWriter(women[clicks]);
     clicks++;
   }
-
-
 }
