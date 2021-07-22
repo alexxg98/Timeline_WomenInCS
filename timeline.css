@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   text-align: center;
 }
@@ -5,16 +9,21 @@ h1 {
   border-radius: 5px;
   width:750px;
   margin: 0 auto;
-  padding-top:15px;
+  padding-top: 5px;
   background: lightgrey;
   height: 700px;
-  font-family: 'Inconsolata', monospace;
   text-align: left;
   font-size:1em;
   color: #fafafa;
 }
 
+#cmd_title {
+  color: #333;
+  margin: 5px 25px;
+}
+
 #cmd_text {
+  font-family: 'Inconsolata', monospace;
   border-radius: 0 0 5px 5px;
   width:670px;
   padding: 40px;
