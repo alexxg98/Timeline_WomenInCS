@@ -41,24 +41,27 @@ h1, h2 {
   animation: blink 0.5s step-end infinite alternate;
 }
 
-/* .cursor {
-  display: inline-block;
-  width: 2px;
-  height: 0.9em;
-  background-color: #fafafa;
-  animation: blink 0.6s linear infinite alternate;
-} */
 @keyframes blink {
     50% {
       border-color: transparent
     }
   }
 
-
 #visualBtn {
-  float: right;
-  margin: 0 25px 0;
+  /* margin: 0 25px 0; */
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-align: center;
+  padding: 15px 32px;
+  border: none;
+  background-color: dimgrey;
+  color: white;
+  display: none; /*Hide btn*/
+  cursor: zoom-in;
 }
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -66,9 +69,9 @@ h1, h2 {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -76,10 +79,10 @@ h1, h2 {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: auto; /* 15% from the top and centered */
+  margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 97vw; /* Could be more or less, depending on screen size */
+  width: 97vw;
   height: 94vh;
 }
 
